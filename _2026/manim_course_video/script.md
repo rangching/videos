@@ -15,6 +15,16 @@ manimgl _2026/manim_course_video/main.py Intro Pipeline DivisionOfLabor Parallel
 - 中文字型用 `CJK_FONT`（預設 `Noto Sans CJK TC`），沒有就改成本機有的字型。
 - 全片只用 `Text`，不需要安裝 LaTeX。
 
+## 配樂 Background music
+
+```bash
+# 合成 4:50 的無版權配樂（72 BPM，Cmaj7–Am7–Fmaj7–G6）
+python _2026/manim_course_video/make_bgm.py bgm.wav 290
+```
+
+- 結構對齊章節：Intro 只有和弦 pad，0:34 起加入 bass 與琶音 arpeggio，4:12 起收掉琶音，最後 6 秒淡出。
+- 混音時配樂壓在旁白下方約 -18 至 -22 dB，人聲出現時再自動壓低（ducking）。
+
 ## 分鏡與旁白 Storyboard & Narration
 
 | # | Scene | 長度 | 重點 |
