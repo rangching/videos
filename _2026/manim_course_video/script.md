@@ -25,6 +25,16 @@ python _2026/manim_course_video/make_bgm.py bgm.wav 290
 - 結構對齊章節：Intro 只有和弦 pad，0:34 起加入 bass 與琶音 arpeggio，4:12 起收掉琶音，最後 6 秒淡出。
 - 混音時配樂壓在旁白下方約 -18 至 -22 dB，人聲出現時再自動壓低（ducking）。
 
+## 字幕 Subtitles
+
+```bash
+# 依旁白稿與各 Scene 長度產生暫用字幕
+python _2026/manim_course_video/make_srt.py
+```
+
+- `subtitles_draft.srt` 的時間是估算的；錄好旁白後，用 STT（如 Whisper）重新產生，時間才會精準。
+- 改了這份旁白稿或 `self.wait()`，要同步更新 `make_srt.py` 的 `SCENE_DURATIONS` 並重跑。
+
 ## 分鏡與旁白 Storyboard & Narration
 
 | # | Scene | 長度 | 重點 |
