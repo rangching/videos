@@ -10,15 +10,15 @@ import re
 import sys
 from pathlib import Path
 
-# Scene lengths in seconds, as rendered from main.py
+# Scene lengths in seconds, as rendered from main.py at 30fps
 SCENE_DURATIONS = {
     "Intro": 34.0,
-    "Pipeline": 45.07,
+    "Pipeline": 45.0,
     "DivisionOfLabor": 49.2,
-    "ParallelAgents": 39.07,
-    "IterationLoop": 43.07,
-    "Pitfalls": 42.13,
-    "Outro": 36.53,
+    "ParallelAgents": 39.03,
+    "IterationLoop": 43.0,
+    "Pitfalls": 42.0,
+    "Outro": 36.5,
 }
 LEAD_IN = 1.0
 TAIL = 1.5
